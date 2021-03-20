@@ -1,0 +1,150 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta pagina esta relacionada con diseño de paginas web apps, automatización y sub estaciones eléctricas">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Tangente Delta</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+     <script>
+        var options={
+            duration: 500,
+            indicators: true,
+            height:210,
+            interval:1000
+        };
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems);
+          var elems = document.querySelectorAll('.slider');
+          var instances = M.Slider.init(elems, options);
+          var elems = document.querySelectorAll('.carousel');
+          var instances = M.Carousel.init(elems);  
+        });   
+       </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left" src="{{url_for('static', filename='assets/img/c1.jpg')}}" alt="Logo de blog"></a>
+           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons ">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+               <li><a href="#">Sobre nosotros</a></li>
+               <li><a href="Scadaweb">Proyectos</a></li>
+               <li><a class="btn" href="contacto">Contacto</a></li>
+           </ul>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a class="btn" href="#">Contacto</a></li>
+        </ul> 
+     <section class="container">
+     <section class="header-main-pic">
+        <div class="slider">
+            <ul class="slides z-depth-4">
+                <li>
+                    <a  href="#one!"><img src="{{url_for('static', filename='assets/img/med3sld.jpg')}}" alt="logo de la pagina"></a> 
+                </li>
+                <li>
+                    <a  href="#two!"><img src="{{url_for('static', filename='assets/img/med2sld.jpg')}}" alt="logo de la pagina"></a>
+                </li>
+                <li>
+                    <a  href="#four!"><img src="{{url_for('static', filename='assets/img/med4sld.jpg')}}" alt="logo de la pagina"></a>
+                </li>
+                <li>
+                    <a  href="#five!"><img src="{{url_for('static', filename='assets/img/med1sld.jpg')}}" alt="logo de la pagina"></a>
+                </li>
+                <li>
+                    <a  href="#six!"><img src="{{url_for('static', filename='assets/img/banner-siemens.jpg')}}" alt="logo de la pagina"></a>
+                </li>
+            </ul>
+        </div>
+      </section>
+    </section>
+    </header>
+
+    {% block content %}
+    <main class="container">
+        <section>
+          <div class="row">
+               <article class="col s12 m6 l4">
+                   <div class="card hoverable">
+                       <div class="card-image waves-effect waves-block waves-light ">
+                           <img class="activator" src="{{url_for('static', filename='assets/img/card3mitsubishi.jpg')}}" alt="">
+                       </div>
+                       <div class="card-content">
+                          <span class="card-title grey-text activator text-darken-4">Programación de Autómatas Plc<i class="material-icons right">more_vert</i></span>
+                       </div>
+                       <div class="card-reveal">
+                           <span class="card-title grey-text activator text-darken-4 ">Proyecto B&R<i class="material-icons right">close</i></span> 
+                           <p>Por favor hacer Clic en el botón IR para mayor información de este proyecto..</p>
+                           <a class="waves-effect waves-teal btn-flat teal
+                            lighten-5 right" href="proyectoplc">Ir</a>
+                       </div>
+                   </div>
+               </article>
+               <article class="col s12 m6 l4">
+                 <div class="card hoverable">
+                     <div class="card-image waves-effect waves-block waves-light">
+                         <img class="activator" src="{{url_for('static', filename='assets/img/card2-1formapol.jpg')}}"alt="">
+                     </div>
+                     <div class="card-content">
+                        <span class="card-title grey-text activator text-darken-4">Sistema de Monitoreo  Web (Scada)<i class="material-icons right">more_vert</i></span>
+                     </div>
+                     <div class="card-reveal">
+                         <span class="card-title grey-text activator text-darken-4 ">Web Scada<i class="material-icons right">close</i></span> 
+                         <p>Página web tipo Scada que supervisa y  adquiere datos productivos en tiempo real, para más información hacer clic en el botón IR.</p>
+                         <a class="waves-effect waves-teal btn-flat teal
+                          lighten-5 right" href="Scadaweb">Ir</a>
+                     </div>
+                 </div>
+               </article>
+               <article class="col s12 m6 l4">
+                 <div class="card hoverable">
+                     <div class="card-image waves-effect waves-block waves-light">
+                         <img class="activator" src="{{url_for('static', filename='assets/img/card4diseñoweb.png')}}" alt="">
+                     </div>
+                     <div class="card-content">
+                        <span class="card-title grey-text activator text-darken-4">Diseño de Paginas Web y Apps<i class="material-icons right">more_vert</i></span>
+                     </div>
+                     <div class="card-reveal">
+                         <span class="card-title grey-text activator text-darken-4 ">Post Title<i class="material-icons right">close</i></span> 
+                         <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                         <a class="waves-effect waves-teal btn-flat teal
+                          lighten-5 right" href="#">Ir</a>
+                     </div>
+                 </div>
+               </article>
+          </div>
+        </section>
+   </main>
+    {% endblock %}
+    <section class="container">
+    <footer class="page-footer z-depth-5">
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Contacto</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Celular1: (57) 3008160902</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Celular2: (52) 5586171777</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Correo: vigemi2@gmail.com</a></li>
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+              </div>
+            </div>
+          </div>
+    </footer>
+   </section>  
+</body>
+</html>
+

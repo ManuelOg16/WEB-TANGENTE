@@ -1,0 +1,81 @@
+body{
+    margin: 0 px;
+    padding: 0px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+/* section header*/
+header{
+    height: 345px;
+
+}
+header nav{
+    height: 75px;
+    background: white;
+    box-shadow: none;
+}
+nav .brand-logo{
+    height: 100px;
+    left: 10%;
+    padding-left: 90px;
+}
+
+nav .brand-logo img{
+    width: 40px;
+    padding-top: 10px;
+    
+}
+
+header nav ul{
+    height: 100px;
+
+}
+header ul  a{
+    color: grey;
+}
+nav a{
+    color: black;
+}
+.btn{
+    background-color:  black;
+}
+/* section header*/
+
+
+/* section main*/
+.card .card-image img{
+    height: 190px;
+}
+/* section main*/
+footer.page-footer{
+    height: 145px;
+    padding-top: 10px;
+    bottom: 0;
+    background-image: url('../assets/img/img-footer-ensalza.png');
+}
+
+/* section media responsive*/
+@media only screen and (max-width: 992px){
+    nav .brand-logo {
+       left: 50%;
+       transform: translateX(-50%);
+}
+}
+
+/* section media responsive*/
+
+/* pagina proyectoplc*/
+
+.video-container iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.tituloplc{
+    text-align: center;
+}
+.carousel{
+    height: 315px;
+}
+/* pagina proyectoplc*/

@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block content %}
+<section>
+  <div class="row">
+    <div class="col s12">
+       <h2 class="tituloplc">Página web Scada para planta industrial</h2>
+    </div>
+  </div>
+</section>
+<section class="container">
+<section class="section">
+ <div class="row">
+   <div class="col s12 m6 ">
+     <p>Los <a href="https://es.wikipedia.org/wiki/SCADA" target="_blank">SCADAs</a>  son programas de Software instalable en los equipos, normalmente servidores, que cumplan los requisitos especificados para ello. Un usuario de una planta automatizada podrá ver y controlar desde él todos aquellos equipos integrados en el sistema.
+      Entre los fabricantes de este tipo de software se encuentran Siemens, con su WinCC y el Citect de Schneider o Wonderware. </p>
+     <p> Teniendo claro el anterior concepto, en este proyecto se fusionan las interfaces web y el sistema de supervisión Scada, pero a diferencia de los software Scada que se encuentran en el mercado, este proyecto se implementó solo con código open source de libre acceso y sin la necesidad de incurrir en altos costos de licencias, por lo tanto este sistema supervisa los principales parámetros del proceso en cada una de las maquinas , además permite descargar desde la misma interfaz un archivo de tipo excel que recolecta toda la información de los parámetros  de producción para tener un control real en consumos / unidades producidas.
+      </p>
+   </div>
+   <div class="col s12 m6 ">
+     <p>Este sistema se puede integrar con una gran variedad de dispositivos /  <a href="proyectoplc">PLC</a> autómatas, además el sistema al estar embebido en un entorno web se puede acceder desde cualquier dispositivo móvil, Tablet o computadora sin límite de usuarios.
+      Para mayor comprensión por favor ver el siguiente video:</p>
+     <div class="video-container">
+       <iframe width="853" height="480" src="https://www.youtube.com/embed/xC6Ek30_mwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+   </div>
+ </div>
+</section>
+</section>
+<section class="section">
+  <div class="row">
+    <div class="carousel">
+      <a class="carousel-item" href="proyectoplc"><img src="{{url_for('static', filename='assets/img/card6siemens.jpg')}}"></a>
+      <a class="carousel-item" href="Scadaweb"><img src="{{url_for('static', filename='assets/img/card2formapol.jpg')}}"></a>
+      <a class="carousel-item" href="#three!"><img src="{{url_for('static', filename='assets/img/card5web.jpg')}}"></a>
+    </div>
+  </div>
+</section>
+{% endblock %}
