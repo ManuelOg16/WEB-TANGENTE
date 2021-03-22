@@ -7,7 +7,8 @@ body{
 }
 /* section header*/
 header{
-    height: 345px;
+    height: 400px;
+    /*345*/
 
 }
 header nav{
@@ -18,7 +19,7 @@ header nav{
 nav .brand-logo{
     height: 100px;
     left: 10%;
-    padding-left: 90px;
+    padding-left: 80px;
 }
 
 nav .brand-logo img{
@@ -40,6 +41,15 @@ nav a{
 .btn{
     background-color:  black;
 }
+
+.header-main-pic {
+    width: 100%;
+    height: 300px;
+    background-image: url('../assets/img/imgnindex.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 /* section header*/
 
 
@@ -48,12 +58,16 @@ nav a{
     height: 190px;
 }
 /* section main*/
+
+/* section footer*/
 footer.page-footer{
     height: 145px;
     padding-top: 10px;
     bottom: 0;
     background-image: url('../assets/img/img-footer-ensalza.png');
 }
+/* section footer*/
+
 
 /* section media responsive*/
 @media only screen and (max-width: 992px){

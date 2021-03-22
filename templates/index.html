@@ -11,29 +11,11 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-     <script>
-        var options={
-            duration: 500,
-            indicators: true,
-            height:210,
-            interval:2000
-        };
-        document.addEventListener('DOMContentLoaded', function() {
-          var elems = document.querySelectorAll('.sidenav');
-          var instances = M.Sidenav.init(elems);
-          var elems = document.querySelectorAll('.slider');
-          var instances = M.Slider.init(elems, options);
-          var elems = document.querySelectorAll('.carousel');
-          var instances = M.Carousel.init(elems);  
-        });   
-       </script>
 </head>
 <body>
     <header>
         <nav class="container">
-           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left" src="{{url_for('static', filename='assets/img/c1.jpg')}}" alt="Logo de blog"></a>
+           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left" src="{{url_for('static', filename='assets/img/c1.jpg')}}" alt="Logo de la página"></a>
            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons ">menu</i></a>
            <ul class="right hide-on-med-and-down">
                <li><a href="#">Sobre nosotros</a></li>
@@ -46,29 +28,25 @@
             <li><a href="Scadaweb">Proyectos</a></li>
             <li><a class="btn" href="contacto">Contacto</a></li>
         </ul> 
-     <section class="container">
-     <section class="header-main-pic">
-        <div class="slider">
-            <ul class="slides z-depth-4">
+     <section class="container hoverable">
+         <section class="header-main-pic z-depth-4"></section>
+           <!--<div class="slider">
+             <ul class="slides z-depth-4">
+                 <li>
+                    <img src="{{url_for('static', filename='assets/img/med1sld.jpg')}}" alt="datos">
+                 </li>
                 <li>
-                    <a  href="#one!"><img src="{{url_for('static', filename='assets/img/med3sld.jpg')}}" alt="logo de la pagina"></a> 
-                </li>
-                <li>
-                    <a  href="#two!"><img src="{{url_for('static', filename='assets/img/med2sld.jpg')}}" alt="logo de la pagina"></a>
-                </li>
-                <li>
-                    <a  href="#four!"><img src="{{url_for('static', filename='assets/img/med4sld.jpg')}}" alt="logo de la pagina"></a>
-                </li>
-                <li>
-                    <a  href="#five!"><img src="{{url_for('static', filename='assets/img/med1sld.jpg')}}" alt="logo de la pagina"></a>
-                </li>
-                <li>
-                    <a  href="#six!"><img src="{{url_for('static', filename='assets/img/banner-siemens.jpg')}}" alt="logo de la pagina"></a>
-                </li>
-            </ul>
-        </div>
-      </section>
-    </section>
+                    <img src="{{url_for('static', filename='assets/img/med2sld.jpg')}}" alt="energia elélctrica">
+                 </li>
+                 <li>
+                    <img src="{{url_for('static', filename='assets/img/med3sld.jpg')}}" alt="programación">
+                 </li>
+                 <li>
+                   <img src="{{url_for('static', filename='assets/img/med4sld.jpg')}}" alt="potencia eléctica">
+                 </li>
+             </ul>
+         </div>-->
+     </section>
     </header>
 
     {% block content %}
@@ -127,6 +105,15 @@
         </section>
    </main>
     {% endblock %}
+    <section class="section">
+      <div class="row">
+        <div class="carousel">
+          <a class="carousel-item" href="#three!"><img src="{{url_for('static', filename='assets/img/card5web.jpg')}}"></a>
+          <a class="carousel-item" href="proyectoplc"><img src="{{url_for('static', filename='assets/img/card6siemens.jpg')}}"></a>
+          <a class="carousel-item" href="Scadaweb"><img src="{{url_for('static', filename='assets/img/card2formapol.jpg')}}"></a>
+        </div>
+      </div>
+    </section>
     <section class="container">
     <footer class="page-footer z-depth-5">
         <div class="container">
@@ -145,6 +132,24 @@
           </div>
     </footer>
    </section>  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+  <script>
+    var options={
+        duration: 500,
+        indicators: true,
+        height:210,
+        interval:2000
+    };
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, options);
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems);  
+    });   
+   </script>
 </body>
 </html>
 
