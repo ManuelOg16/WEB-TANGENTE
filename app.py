@@ -4,6 +4,10 @@ app = Flask(__name__)
 def index():                           
     return  render_template('index.html')
 
+@app.route('/quienes-somos')                       
+def quienes():                           
+    return  render_template('quienes-somos.html')
+
 @app.route('/proyectoplc')                       
 def plc():                           
     return  render_template('proyectoplc.html')

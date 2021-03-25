@@ -11,24 +11,25 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="container">
-           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left" src="{{url_for('static', filename='assets/img/c1.jpg')}}" alt="Logo de la página"></a>
+           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left z-depth-4" src="{{url_for('static', filename='assets/img/Tangente-Delta.png')}}" alt="Logo de la página"></a>
            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons ">menu</i></a>
            <ul class="right hide-on-med-and-down">
-               <li><a href="#">Sobre nosotros</a></li>
+               <li><a href="quienes-somos">Quiénes somos?</a></li>
                <li><a href="Scadaweb">Proyectos</a></li>
                <li><a class="btn" href="contacto">Contacto</a></li>
            </ul>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="quienes-somos">Quiénes somos?</a></li>
             <li><a href="Scadaweb">Proyectos</a></li>
             <li><a class="btn" href="contacto">Contacto</a></li>
         </ul> 
-     <section class="container hoverable">
+     <section class="container ">
          <section class="header-main-pic z-depth-4"></section>
            <!--<div class="slider">
              <ul class="slides z-depth-4">
@@ -115,21 +116,23 @@
       </div>
     </section>
     <section class="container">
-    <footer class="page-footer z-depth-5">
-        <div class="container">
+     <footer class="page-footer z-depth-5">
             <div class="row">
-              <div class="col l6 s12">
+              <div class="col  s12 l8">
                 <h5 class="white-text">Contacto</h5>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#!">Celular1: (57) 3008160902</a></li>
                   <li><a class="grey-text text-lighten-3" href="#!">Celular2: (52) 5586171777</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Correo: vigemi2@gmail.com</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Correo: tangentedelta.com@gmail.com</a></li>
                 </ul>
               </div>
-              <div class="col l4 offset-l2 s12">
+              <div class="col l1 offset-l1 s12">
+                <div> <a href="https://www.youtube.com/channel/UCioxHtbehAPzyQsCT002G5g" target="_blank"><img  class="lyoutube" src="{{url_for('static', filename='assets/img/youtube.png')}}" alt="Logo de la página"></a></div>
+              </div>
+              <div class="col l2  s12">
+                <div> <a href="contacto"><img  class="lemail" src="{{url_for('static', filename='assets/img/email.png')}}" alt="Logo de la página"></a></div>
               </div>
             </div>
-          </div>
     </footer>
    </section>  
   <!-- Compiled and minified JavaScript -->

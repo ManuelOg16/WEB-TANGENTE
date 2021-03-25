@@ -1,0 +1,44 @@
+{% extends "index.html" %}
+
+{% block content %}
+<section>
+   <div class="row">
+     <div class="col s12">
+        <h2 class="tituloplc">Quiénes somos?</h2>
+     </div>
+   </div>
+</section>
+<section class="container">
+ <section class="section">
+  <div class="row">
+     <div class="col s12 m6 ">
+        <p>Somos una empresa Colombiana, dedicada a implementar e intergar tecnología enfocado al sector industrial y el desarrollo de aplicaciones Web.</p>
+        <h4>Nosotros</h4>
+        <p>Nuestro equipo cuenta con experiencia en el sector de automatización de procesos industriales, instalaciones eléctricas industriales y subestaciones eléctricas.</p>
+        <h4>¿Qué hacemos?</h4>
+        <ol>
+          <li>Configuración y montaje de PLCs</li>
+          <li>Diseño e implementación de sistemas de supervisión y acceso a registros históricos de procesos industriales. </li>
+          <li>Estudios de calidad de energía para instalaciones eléctricas.</li>
+          <li>Sistemas de monitoreo y adquisición de datos de instalaciones eléctricas.</li>
+          <li>Diseño de instalaciones eléctricas BT/MT.</li>
+          <li>Diseño de páginas y aplicaciones Web.</li>
+        </ol>
+      </div>
+      <div class="col s12 m6 ">
+        <a href="/"><img class="bannerlateral z-depth-4" src="{{url_for('static', filename='assets/img/Tangente-Delta.png')}}" alt="Logo de la página"></a>
+      </div>
+   </div>
+ </section>
+</section>
+<!--<section class="section">
+  <div class="row">
+    <div class="carousel">
+      <a class="carousel-item" href="proyectoplc"><img src="{{url_for('static', filename='assets/img/card3mitsubishi.jpg')}}"></a>
+      <a class="carousel-item" href="Scadaweb"><img src="{{url_for('static', filename='assets/img/card2formapol.jpg')}}"></a>
+      <a class="carousel-item" href="#three!"><img src="{{url_for('static', filename='assets/img/card4diseñoweb.png')}}"></a>
+    </div>
+  </div>
+</section>-->
+
+{% endblock %}
