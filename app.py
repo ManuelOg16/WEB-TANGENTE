@@ -8,13 +8,17 @@ def index():
 def quienes():                           
     return  render_template('quienes-somos.html')
 
-@app.route('/proyectoplc')                       
-def plc():                           
-    return  render_template('proyectoplc.html')
+@app.route('/proyectos')                       
+def exito():                           
+    return  render_template('proyectos.html')
 
-@app.route('/Scadaweb')                       
+@app.route('/proyecto-plc')                       
+def plc():                           
+    return  render_template('proyecto-plc.html')
+
+@app.route('/Scada-web')                       
 def scada():                           
-    return  render_template('Scadaweb.html')
+    return  render_template('Scada-web.html')
 
 @app.route('/contacto')                       
 def formulario():                           
