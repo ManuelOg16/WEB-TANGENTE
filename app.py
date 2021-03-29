@@ -19,6 +19,9 @@ def plc():
 @app.route('/Scada-web')                       
 def scada():                           
     return  render_template('Scada-web.html')
+@app.route('/paginas-web')                       
+def paginas():                           
+    return  render_template('paginas-web.html')
 
 @app.route('/contacto')                       
 def formulario():                           
