@@ -2,34 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Esta pagina esta relacionada con diseño de paginas web apps, automatización y sub estaciones eléctricas">
+    <meta name="description" content="Tangentedelta ofrece servicios de programación con Python para  sistemas como monitoreo sincrofasorial, automatización industrial y análisis de datos.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"  content="width=device-width, initial-scale=1.0">
-    <title>Tangente Delta</title>
+    <title>Programación Web con Python en Colombia | tangentedelta</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://www.tangentedelta.com">
+    <link rel="icon" type="icon" href="{{url_for('static', filename='assets/img/favicon.ico')}}">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K25QJPT');</script>
+      <!-- End Google Tag Manager -->
 </head>
 <body>
+     <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K25QJPT"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
     <header>
         <nav class="container">
-           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left " src="{{url_for('static', filename='assets/img/logo2.png')}}" alt="Logo de la página"></a>
+           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left " src="{{url_for('static', filename='assets/img/logo2.png')}}" alt="Logo de la página" width="200" height="90"></a>
            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons ">menu</i></a>
            <ul class="right hide-on-med-and-down">
                <li><a href="quienes-somos">Quiénes somos?</a></li>
-               <li><a href="proyectos">Proyectos</a></li>
+               <li><a href="/proyectos/nuestros-proyectos">Proyectos</a></li>
                <li><a class="btn" href="contacto">Contacto</a></li>
            </ul>
         </nav>
         <ul class="sidenav" id="mobile-demo">
             <li><a href="quienes-somos">Quiénes somos?</a></li>
-            <li><a href="proyectos">Proyectos</a></li>
+            <li><a href="/proyectos/nuestros-proyectos">Proyectos</a></li>
             <li><a class="btn" href="contacto">Contacto</a></li>
-        </ul> 
+        </ul>
+
      <section class="container ">
+
          <section class="header-main-pic z-depth-4"></section>
            <!--<div class="slider">
              <ul class="slides z-depth-4">
@@ -51,57 +68,84 @@
     </header>
 
     {% block content %}
+    <section>
+
     <main class="container">
         <section>
+          
           <div class="row">
-               <article class="col s12 m6 l4">
+            <div class="col s12 ">
+              <h1 class="tituloh1">Aplicaciones Web y programación con Python</h1>
+              <p class="introduccion">Tangentedelta cuenta con especialistas en diversos lenguajes de programación y manejo de Frameworks como <a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank">Flask</a> de Python, Node js y otras plataformas para el desarrollo <a href="/proyectos/desarrollo-web/paginas-web">Web</a>, además el análisis de datos  se desarrolla a través de aplicaciones de acuerdo a las necesidades de nuestros clientes.</p>
+              <p class="introduccion">Entre las categorías encontraras proyectos realizados con programación que te permitirán comprobar los casos de éxito, para que lleves tu negocio a otro nivel con todo el manejo y análisis de la datos.</p>
+            </div>
+            <div class="col s12">
+              <h2 class="tituloh2">Estas son las categorías principales de programación que ofrecemos con nuestros servicios.</h2>
+             </div>
+               <article class="col s12 m6 l3">
                    <div class="card hoverable">
                        <div class="card-image waves-effect waves-block waves-light ">
-                           <img class="activator" src="{{url_for('static', filename='assets/img/card3mitsubishi.jpg')}}" alt="">
+                           <img class="activator" src="{{url_for('static', filename='assets/img/card3mitsubishi.jpg')}}" alt="Programación-PLC-Mitsubishi" width="600" height="300">
                        </div>
                        <div class="card-content">
-                          <span class="card-title grey-text activator text-darken-4">Programación de Autómatas Plc<i class="material-icons right">more_vert</i></span>
+                          <span class="card-title grey-text activator text-darken-4">Programación de controladores lógicos (Plc)<i class="material-icons right">more_vert</i></span>
                        </div>
                        <div class="card-reveal">
                            <span class="card-title grey-text activator text-darken-4 ">Proyecto B&R<i class="material-icons right">close</i></span> 
                            <p>Por favor hacer Clic en el botón IR para mayor información de este proyecto..</p>
                            <a class="waves-effect waves-teal btn-flat teal
-                            lighten-5 right" href="proyecto-plc">Ir</a>
+                            lighten-5 right" href="/proyectos/programacion-plc/plc-br">Ir</a>
                        </div>
                    </div>
                </article>
-               <article class="col s12 m6 l4">
+               <article class="col s12 m6 l3">
                  <div class="card hoverable">
                      <div class="card-image waves-effect waves-block waves-light">
-                         <img class="activator" src="{{url_for('static', filename='assets/img/card2-1formapol.jpg')}}"alt="">
+                         <img class="activator" src="{{url_for('static', filename='assets/img/card2-1formapol.jpg')}}"alt="Monitoreo-supervision-Web" width="600" height="300">
                      </div>
                      <div class="card-content">
-                        <span class="card-title grey-text activator text-darken-4">Sistema de Monitoreo  Web (Scada)<i class="material-icons right">more_vert</i></span>
+                        <span class="card-title grey-text activator text-darken-4">Sistemas Web de supervición (Scada)<i class="material-icons right">more_vert</i></span>
                      </div>
                      <div class="card-reveal">
                          <span class="card-title grey-text activator text-darken-4 ">Web Scada<i class="material-icons right">close</i></span> 
                          <p>Página web tipo Scada que supervisa y  adquiere datos productivos en tiempo real, para más información hacer clic en el botón IR.</p>
                          <a class="waves-effect waves-teal btn-flat teal
-                          lighten-5 right" href="Scada-web">Ir</a>
+                          lighten-5 right" href="/proyectos/scada-web/scada-web-formapol">Ir</a>
                      </div>
                  </div>
                </article>
-               <article class="col s12 m6 l4">
+               <article class="col s12 m6 l3">
                  <div class="card hoverable">
                      <div class="card-image waves-effect waves-block waves-light">
-                         <img class="activator" src="{{url_for('static', filename='assets/img/card4diseñoweb.png')}}" alt="">
+                         <img class="activator" src="{{url_for('static', filename='assets/img/card4diseñoweb.png')}}" alt="Desarrollo-Web" width="600" height="300">
                      </div>
                      <div class="card-content">
-                        <span class="card-title grey-text activator text-darken-4">Diseño de Paginas Web y Apps<i class="material-icons right">more_vert</i></span>
+                        <span class="card-title grey-text activator text-darken-4">Diseño de Paginas Web y Apps de analisis de datos<i class="material-icons right">more_vert</i></span>
                      </div>
                      <div class="card-reveal">
                          <span class="card-title grey-text activator text-darken-4 ">Páginas Web<i class="material-icons right">close</i></span> 
                          <p>Diseño de páginas Web y Apps por favor seguir el enlace.</p>
                          <a class="waves-effect waves-teal btn-flat teal
-                          lighten-5 right" href="paginas-web">Ir</a>
+                          lighten-5 right" href="/proyectos/desarrollo-web/paginas-web">Ir</a>
                      </div>
                  </div>
                </article>
+               <article class="col s12 m6 l3">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{url_for('static', filename='assets/img/card6potencia.jpg')}}" alt="Redes-eléctricas" width="600" height="300">
+                    </div>
+                    <div class="card-content">
+                       <span class="card-title grey-text activator text-darken-4">Monitoreo de redes eléctricas de potencia<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text activator text-darken-4 ">Pmu Sincrofasorial<i class="material-icons right">close</i></span> 
+                        <p>Monitoreo de sistemas eléctricos de potencia por favor seguir el enlace.</p>
+                        <a class="waves-effect waves-teal btn-flat teal
+                         lighten-5 right" href="/proyectos/monitoreo/redes-electricas-potencia">Ir</a>
+                    </div>
+                </div>
+              </article>
           </div>
         </section>
    </main>
@@ -109,9 +153,9 @@
     <section class="section">
       <div class="row">
         <div class="carousel">
-          <a class="carousel-item" href="#three!"><img src="{{url_for('static', filename='assets/img/card5web.jpg')}}"></a>
-          <a class="carousel-item" href="proyecto-plc"><img src="{{url_for('static', filename='assets/img/card6siemens.jpg')}}"></a>
-          <a class="carousel-item" href="Scada-web"><img src="{{url_for('static', filename='assets/img/card2formapol.jpg')}}"></a>
+          <a class="carousel-item" href="/proyectos/desarrollo-web/paginas-web"><img src="{{url_for('static', filename='assets/img/card5web.jpg')}}" alt="Computadores" width="200" height="118"></a>
+          <a class="carousel-item" href="/proyectos/programacion-plc/plc-br"><img src="{{url_for('static', filename='assets/img/card6siemens.jpg')}}"alt="PLC-Siemens" width="143" height="120"></a>
+          <a class="carousel-item" href="/proyectos/scada-web/scada-web-formapol"><img src="{{url_for('static', filename='assets/img/card2formapol.jpg')}}"alt="Supervisor-Scada" width="200" height="208"></a>
         </div>
       </div>
     </section>
@@ -123,14 +167,14 @@
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#!">Celular1: (57) 3008160902</a></li>
                   <li><a class="grey-text text-lighten-3" href="#!">Celular2: (52) 5586171777</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Correo: tangentedelta.com@gmail.com</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Correo: contacto@tangentedelta.com</a></li>
                 </ul>
               </div>
               <div class="col l1 offset-l1 s12">
-                <div> <a href="https://www.youtube.com/channel/UCioxHtbehAPzyQsCT002G5g" target="_blank"><img  class="lyoutube" src="{{url_for('static', filename='assets/img/youtube.png')}}" alt="Logo de la página"></a></div>
+                <div> <a href="https://www.youtube.com/channel/UCioxHtbehAPzyQsCT002G5g" target="_blank"><img  class="lyoutube" src="{{url_for('static', filename='assets/img/youtube.png')}}" alt="Logo-de-youtube" width="50" height="50"></a></div>
               </div>
               <div class="col l2  s12">
-                <div> <a href="contacto"><img  class="lemail" src="{{url_for('static', filename='assets/img/email.png')}}" alt="Logo de la página"></a></div>
+                <div> <a href="contacto"><img  class="lemail" src="{{url_for('static', filename='assets/img/email.png')}}" alt="Logo-de-contacto" width="50" height="50"></a></div>
               </div>
             </div>
     </footer>

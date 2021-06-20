@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tangentedelta desarrolla diseños exclusivos y personalizados para la supervisión y control tipo web de los procesos industriales. ¡Adquiérelo Aquí!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Supervisión y Control Web en Colombia | tangentedelta</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/proyectos.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://www.tangentedelta.com">
+    <link rel="icon" type="icon" href="{{url_for('static', filename='assets/img/favicon.ico')}}">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K25QJPT');</script>
+      <!-- End Google Tag Manager -->
+</head>
+<body>
+     <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K25QJPT"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <nav class="container">
+           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left " src="{{url_for('static', filename='assets/img/logo2.png')}}" alt="Logo de la página" width="200" height="90"></a>
+           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons ">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+               <li><a href="/quienes-somos">Quiénes somos?</a></li>
+               <li><a href="/proyectos/nuestros-proyectos">Proyectos</a></li>
+               <li><a class="btn" href="/contacto">Contacto</a></li>
+           </ul>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="/quienes-somos">Quiénes somos?</a></li>
+            <li><a href="/proyectos/nuestros-proyectos">Proyectos</a></li>
+            <li><a class="btn" href="/contacto">Contacto</a></li>
+        </ul>
+        <nav class="container">
+          <div class="nav-wrapper">
+            <div class="col s12">
+              <a href="/" class="breadcrumb">Home</a>
+              <a href="/proyectos/nuestros-proyectos" class="breadcrumb">Proyectos</a>
+              <a href="/proyectos/scada-web/scada-web-formapol" class="breadcrumb">Scada-Web</a>
+            </div>
+          </div>
+        </nav>
+     <section class="container ">
+
+         <section class="header-main-pic-scada z-depth-4"></section>
+         </section>
+    </header>
+
+{% block content %}
+<section>
+  <div class="row">
+
+  </div>
+</section>
+<section class="container">
+<section class="section">
+ <div class="row">
+  <div class="col s12">
+    <h1 class="titulo-pr-proyecto">Página de supervisión y control web para planta industrial</h1>
+   </div>
+   <div class="col s12 m6 ">
+     <p>Los <a href="https://es.wikipedia.org/wiki/SCADA" target="_blank">SCADAs</a>  son programas de Software instalable en los equipos, normalmente servidores, que cumplan los requisitos especificados para ello. Un usuario de una planta automatizada podrá ver y controlar desde él todos aquellos equipos integrados en el sistema.
+      Entre los fabricantes de este tipo de software se encuentran Siemens, con su WinCC y el Citect de Schneider o Wonderware. </p>
+     <p> Teniendo claro el anterior concepto, en este proyecto se fusionan las interfaces web y el sistema de supervisión Scada, pero a diferencia de los software Scada que se encuentran en el mercado, este proyecto se implementó solo con código open source de libre acceso y sin la necesidad de incurrir en altos costos de licencias, por lo tanto este sistema supervisa los principales parámetros del proceso en cada una de las maquinas , además permite descargar desde la misma interfaz un archivo de tipo excel que recolecta toda la información de los parámetros  de producción para tener un control real en consumos / unidades producidas.
+      </p>
+   </div>
+   <div class="col s12 m6 ">
+    <h2 class="tituloh2">Proyecto de supervisión y control web en planta industrial.</h2>
+     <p>Este sistema se puede integrar con una gran variedad de dispositivos /  <a href="/proyectos/programacion-plc/plc-br">PLC</a> autómatas, además el sistema al estar embebido en un entorno web se puede acceder desde cualquier dispositivo móvil, Tablet o computadora sin límite de usuarios.
+      Para mayor comprensión por favor ver el siguiente video:</p>
+     <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SCc0FFEzZsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+   </div>
+ </div>
+</section>
+</section>
+{% endblock %}
+<section class="section">
+  <div class="row">
+    <div class="carousel">
+      <a class="carousel-item" href="/proyectos/desarrollo-web/paginas-web"><img src="{{url_for('static', filename='assets/img/card5web.jpg')}}" alt="Computadores" width="200" height="118"></a>
+      <a class="carousel-item" href="/proyectos/programacion-plc/plc-br"><img src="{{url_for('static', filename='assets/img/card6siemens.jpg')}}"alt="PLC-Siemens"  width="143" height="120"></a>
+      <a class="carousel-item" href="/proyectos/scada-web/scada-web-formapol"><img src="{{url_for('static', filename='assets/img/card2formapol.jpg')}}"alt="Supervisor-Scada" width="200" height="208"></a>
+    </div>
+  </div>
+</section>
+<section class="container">
+ <footer class="page-footer z-depth-5">
+        <div class="row">
+          <div class="col  s12 l8">
+            <h5 class="white-text">Contacto</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Celular1: (57) 3008160902</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Celular2: (52) 5586171777</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Correo: contacto@tangentedelta.com</a></li>
+            </ul>
+          </div>
+          <div class="col l1 offset-l1 s12">
+            <div> <a href="https://www.youtube.com/channel/UCioxHtbehAPzyQsCT002G5g" target="_blank"><img  class="lyoutube" src="{{url_for('static', filename='assets/img/youtube.png')}}" alt="Logo-de-youtube" width="50" height="50"></a></div>
+          </div>
+          <div class="col l2  s12">
+            <div> <a href="/contacto"><img  class="lemail" src="{{url_for('static', filename='assets/img/email.png')}}" alt="Logo-de-contacto" width="50" height="50"></a></div>
+          </div>
+        </div>
+</footer>
+</section>  
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script>
+var options={
+    duration: 500,
+    indicators: true,
+    height:210,
+    interval:2000
+};
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
+  var elems = document.querySelectorAll('.slider');
+  var instances = M.Slider.init(elems, options);
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems);  
+});   
+</script>
+</body>
+</html>

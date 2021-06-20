@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tangentedelta tiene proyectos y casos de éxito con una gran diversidad de clientes en el sector industrial, energético.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Proyectos y Casos de Éxito en Colombia | tangentedelta</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/proyectos.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://www.tangentedelta.com">
+    <link rel="icon" type="icon" href="{{url_for('static', filename='assets/img/favicon.ico')}}">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K25QJPT');</script>
+      <!-- End Google Tag Manager -->
+</head>
+<body>
+     <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K25QJPT"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <nav class="container">
+           <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left " src="{{url_for('static', filename='assets/img/logo2.png')}}" alt="Logo de la página" width="200" height="90"></a>
+           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons ">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+               <li><a href="/quienes-somos">Quiénes somos?</a></li>
+               <li><a href="/proyectos/nuestros-proyectos">Proyectos</a></li>
+               <li><a class="btn" href="/contacto">Contacto</a></li>
+           </ul>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="/quienes-somos">Quiénes somos?</a></li>
+            <li><a href="/proyectos/nuestros-proyectos">Proyectos</a></li>
+            <li><a class="btn" href="/contacto">Contacto</a></li>
+        </ul>
+        <nav class="container">
+          <div class="nav-wrapper">
+            <div class="col s12">
+              <a href="/" class="breadcrumb">Home</a>
+              <a href="/proyectos/nuestros-proyectos" class="breadcrumb">Proyectos</a>
+            </div>
+          </div>
+        </nav>
+     <section class="container ">
+
+         <section class="header-main-pic-proyectos z-depth-4"></section>
+         </section>
+    </header>
+
+{% block content %}
+<section>
+
+</section>
+<section class="container">
+ <section class="section">
+  <div class="row">
+    <div class="col s12">
+       <h1 class="titulo-pr-proyecto">Nuestros Proyectos y Casos de Éxito</h1>
+       <p class="introduccion">Tangentedelta ha desarrollado proyectos a la medida de cada uno de nuestros clientes, los casos de éxito incluyen sistemas de monitoreo para <a href="https://es.wikipedia.org/wiki/Red_de_distribuci%C3%B3n_de_energ%C3%ADa_el%C3%A9ctrica" target="_blank">redes eléctricas de potencia</a>, automatización industrial, programación de controladores lógicos programables (PLC), diseño de páginas web, aplicaciones de gestión y análisis de datos en procesos productivos y monitoreo/adquisición y control de datos a través de <a href="/proyectos/scada-web/scada-web-formapol">sistemas</a>  web (Scada).</p>
+       <p class="introduccion">En cada uno de los proyectos se integran diferentes tecnologías enfocadas a las mejores prácticas de programación.</p>        
+    </div>
+  </div>
+  <div class="col s12">
+   <h2 class="tituloh2">Estos son los principales proyectos desarrollados y ejecutados por nuestros especialistas.</h2>
+  </div>
+  <div class="row">
+      <div class="col s12 m6 l3">
+        <h5>Proyecto PLC B&R</h5>
+        <div class="card small">
+            <div class="card-image">
+                <img src="{{url_for('static', filename='assets/img/interface-hombre-m.jpg')}}" alt="PLC-B&R" width="600" height="300">
+            </div>
+            <div class="card-content">
+                <p>En el presente proyecto se realizó el montaje y la configuración de un PLC de la marca B&R. </p>
+            </div>
+            <div class="card-action">
+                <a href="/proyectos/programacion-plc/plc-br">Mas información</a>
+            </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <h5>Proyecto Scada Web</h5>
+        <div class="card small">
+            <div class="card-image">
+                <img src="{{url_for('static', filename='assets/img/scadaw.jpg')}}" alt="Scada-web-formapol" width="600" height="300">
+            </div>
+            <div class="card-content">
+                <p>En el presente proyecto se desarrolló una interfaz web basada en el concepto de sistema SCADA. </p>
+            </div>
+            <div class="card-action">
+                <a href="/proyectos/scada-web/scada-web-formapol">Mas información</a>
+            </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <h5>Páginas Web</h5>
+        <div class="card small">
+            <div class="card-image">
+                <img src="{{url_for('static', filename='assets/img/paginaweb.jpg')}}" alt="Página-web" width="600" height="300">
+            </div>
+            <div class="card-content">
+                <p>Diseñamos páginas web a la medida del cliente, nuestras paginas son responsivas y amigables con el usuario. </p>
+            </div>
+            <div class="card-action">
+                <a href="/proyectos/desarrollo-web/paginas-web">Mas información</a>
+            </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <h5>Monitoreo de Redes</h5>
+        <div class="card small">
+            <div class="card-image">
+                <img src="{{url_for('static', filename='assets/img/redes-electricas.png')}}" alt="Página-web" width="600" height="300">
+            </div>
+            <div class="card-content">
+                <p>Este proyecto monitorea en tiempo real las redes eléctricas de potencia en una universidad, la programación y las interfaces se programaron con Python. </p>
+            </div>
+            <div class="card-action">
+                <a href="/proyectos/monitoreo/redes-electricas-potencia">Mas información</a>
+            </div>
+        </div>
+      </div>
+   </div>
+ </section>
+</section>
+
+
+{% endblock %}
+<section class="section">
+  <div class="row">
+    <div class="carousel">
+      <a class="carousel-item" href="/proyectos/desarrollo-web/paginas-web"><img src="{{url_for('static', filename='assets/img/card5web.jpg')}}" alt="Computadores" width="200" height="118"></a>
+      <a class="carousel-item" href="/proyectos/programacion-plc/plc-br"><img src="{{url_for('static', filename='assets/img/card6siemens.jpg')}}"alt="PLC-Siemens"  width="143" height="120"></a>
+      <a class="carousel-item" href="/proyectos/scada-web/scada-web-formapol"><img src="{{url_for('static', filename='assets/img/card2formapol.jpg')}}"alt="Supervisor-Scada" width="200" height="208"></a>
+    </div>
+  </div>
+</section>
+<section class="container">
+ <footer class="page-footer z-depth-5">
+        <div class="row">
+          <div class="col  s12 l8">
+            <h5 class="white-text">Contacto</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Celular1: (57) 3008160902</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Celular2: (52) 5586171777</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Correo: contacto@tangentedelta.com</a></li>
+            </ul>
+          </div>
+          <div class="col l1 offset-l1 s12">
+            <div> <a href="https://www.youtube.com/channel/UCioxHtbehAPzyQsCT002G5g" target="_blank"><img  class="lyoutube" src="{{url_for('static', filename='assets/img/youtube.png')}}" alt="Logo-de-youtube" width="50" height="50"></a></div>
+          </div>
+          <div class="col l2  s12">
+            <div> <a href="/contacto"><img  class="lemail" src="{{url_for('static', filename='assets/img/email.png')}}" alt="Logo-de-contacto" width="50" height="50"></a></div>
+          </div>
+        </div>
+</footer>
+</section>  
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script>
+var options={
+    duration: 500,
+    indicators: true,
+    height:210,
+    interval:2000
+};
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
+  var elems = document.querySelectorAll('.slider');
+  var instances = M.Slider.init(elems, options);
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems);  
+});   
+</script>
+</body>
+</html>
