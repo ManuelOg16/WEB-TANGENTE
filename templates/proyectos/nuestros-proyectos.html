@@ -33,13 +33,13 @@
            <a href="/" class="brand-logo  valign-wrapper"><img class="responsive-img left " src="{{url_for('static', filename='assets/img/logo2.png')}}" alt="Logo de la página" width="200" height="90"></a>
            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons ">menu</i></a>
            <ul class="right hide-on-med-and-down">
-               <li><a href="/quienes-somos">Quiénes somos?</a></li>
+               <li><a href="/quienes-somos">¿Quiénes somos?</a></li>
                <li><a href="/proyectos/nuestros-proyectos">Proyectos</a></li>
                <li><a class="btn" href="/contacto">Contacto</a></li>
            </ul>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="/quienes-somos">Quiénes somos?</a></li>
+            <li><a href="/quienes-somos">¿Quiénes somos?</a></li>
             <li><a href="/proyectos/nuestros-proyectos">Proyectos</a></li>
             <li><a class="btn" href="/contacto">Contacto</a></li>
         </ul>
@@ -67,7 +67,7 @@
     <div class="col s12">
        <h1 class="titulo-pr-proyecto">Nuestros Proyectos y Casos de Éxito</h1>
        <p class="introduccion">Tangentedelta ha desarrollado proyectos a la medida de cada uno de nuestros clientes, los casos de éxito incluyen sistemas de monitoreo para <a href="https://es.wikipedia.org/wiki/Red_de_distribuci%C3%B3n_de_energ%C3%ADa_el%C3%A9ctrica" target="_blank">redes eléctricas de potencia</a>, automatización industrial, programación de controladores lógicos programables (PLC), diseño de páginas web, aplicaciones de gestión y análisis de datos en procesos productivos y monitoreo/adquisición y control de datos a través de <a href="/proyectos/scada-web/scada-web-formapol">sistemas</a>  web (Scada).</p>
-       <p class="introduccion">En cada uno de los proyectos se integran diferentes tecnologías enfocadas a las mejores prácticas de programación.</p>        
+       <p class="introduccion">En cada uno de los proyectos se integran diferentes tecnologías enfocadas a las mejores prácticas de programación.</p>
     </div>
   </div>
   <div class="col s12">
@@ -136,14 +136,35 @@
 
 
 {% endblock %}
-<section class="section">
+<section class="container">
   <div class="row">
-    <div class="carousel">
+  <div class="col s12">
+    <h3 class="tituloh2">Nuestros clientes.</h3>
+   </div>
+  </div>
+  <div class="row">
+    <div class="col  s12 l6 offset l6 offset-l3">
+          <div class="slider">
+             <ul class="slides z-depth-4">
+                 <li>
+                    <img src="{{url_for('static', filename='assets/img/logo-induma.png')}}" alt="empresa-induma" width="500" height="400">
+                 </li>
+                <li>
+                    <img src="{{url_for('static', filename='assets/img/logo-unam.png')}}" alt="universidad-unam"  width="500" height="400">
+                 </li>
+                 <li>
+                  <img src="{{url_for('static', filename='assets/img/logo-formapol.jpg')}}" alt="empresa-formapol"  width="500" height="400">
+               </li>
+             </ul>
+         </div>  
+
+     <!--<div class="carousel">
       <a class="carousel-item" href="/proyectos/desarrollo-web/paginas-web"><img src="{{url_for('static', filename='assets/img/card5web.jpg')}}" alt="Computadores" width="200" height="118"></a>
       <a class="carousel-item" href="/proyectos/programacion-plc/plc-br"><img src="{{url_for('static', filename='assets/img/card6siemens.jpg')}}"alt="PLC-Siemens"  width="143" height="120"></a>
       <a class="carousel-item" href="/proyectos/scada-web/scada-web-formapol"><img src="{{url_for('static', filename='assets/img/card2formapol.jpg')}}"alt="Supervisor-Scada" width="200" height="208"></a>
-    </div>
+    </div>--> 
   </div>
+</div>
 </section>
 <section class="container">
  <footer class="page-footer z-depth-5">
@@ -164,14 +185,14 @@
           </div>
         </div>
 </footer>
-</section>  
+</section>
 <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
 var options={
     duration: 500,
     indicators: true,
-    height:210,
+    height:220,
     interval:2000
 };
 document.addEventListener('DOMContentLoaded', function() {
@@ -180,8 +201,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.slider');
   var instances = M.Slider.init(elems, options);
   var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems);  
-});   
+  var instances = M.Carousel.init(elems);
+});
 </script>
 </body>
 </html>
